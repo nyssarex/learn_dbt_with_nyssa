@@ -1,0 +1,12 @@
+version: 2
+
+sources: 
+  - name: ny_taxi
+    description: Data pulled from NY taxi https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+    database: ny_taxi
+    schema: public
+    tables:
+      - name: yellow_taxi_data
+        description: 'information about rides such as departure, arrival area, price, type of taxi, passenger count, duration etc.'
+      - name: taxi_zone_area
+        description: 'Part of New York and zones'

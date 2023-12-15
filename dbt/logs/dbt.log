@@ -1,0 +1,46 @@
+[0m22:17:07.430537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f914211b220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91428199d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9142819970>]}
+
+
+============================== 22:17:07.440174 | a861094c-1efd-4ac3-959e-fe63ba39b2c4 ==============================
+[0m22:17:07.440174 [info ] [MainThread]: Running with dbt=1.7.3
+[0m22:17:07.440894 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/nyssarex/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init dbt_ny_taxi', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:17:07.441839 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/nyssarex/.dbt')}
+[0m22:17:07.442203 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m22:17:07.446631 [debug] [MainThread]: Starter project path: /home/nyssarex/dbt_image/dbt-venv/lib/python3.9/site-packages/dbt/include/starter_project
+[0m22:17:07.464857 [info ] [MainThread]: 
+Your new dbt project "dbt_ny_taxi" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:17:07.465389 [info ] [MainThread]: Setting up your profile.
+[0m22:20:15.347042 [info ] [MainThread]: Profile dbt_ny_taxi written to /home/nyssarex/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:20:15.409145 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 187.99052, "process_user_time": 2.395157, "process_kernel_time": 2.084488, "process_mem_max_rss": "94024", "process_in_blocks": "2472", "process_out_blocks": "80"}
+[0m22:20:15.426987 [debug] [MainThread]: Command `dbt init` succeeded at 22:20:15.425740 after 188.02 seconds
+[0m22:20:15.436079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f914211b220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91428198b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f913fa9adc0>]}
+[0m22:20:15.444085 [debug] [MainThread]: Flushing usage events
+[0m23:26:03.470204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcd10cd4b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcd124c32b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcd0ec13d60>]}
+
+
+============================== 23:26:03.478069 | b3cd2f27-ebb1-478d-9d8d-8e1ec1390cbe ==============================
+[0m23:26:03.478069 [info ] [MainThread]: Running with dbt=1.7.3
+[0m23:26:03.478742 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/nyssarex/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m23:26:03.479469 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/nyssarex/dbt_image/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:26:03.482003 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.06299365, "process_user_time": 2.037157, "process_kernel_time": 1.805203, "process_mem_max_rss": "90424", "process_in_blocks": "1064", "process_out_blocks": "24", "command_success": false}
+[0m23:26:03.482686 [debug] [MainThread]: Command `dbt run` failed at 23:26:03.482524 after 0.06 seconds
+[0m23:26:03.484794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcd10cd4b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcd0ec13ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcd0ec13880>]}
+[0m23:26:03.485361 [debug] [MainThread]: Flushing usage events

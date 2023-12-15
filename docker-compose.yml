@@ -1,0 +1,43 @@
+services:
+  pgdatabase:
+    image: postgres:14
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=ny_taxi
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-vol:/var/lib/postgresql/data:rw
+    
+    networks:
+      - db_network
+    
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    ports:
+      - "8888:80"
+    volumes:
+      - pgadmin_conn_data:/var/lib/pgadmin:rw
+    
+    networks:
+      - db_network
+
+  #dbt-core:
+    #
+  
+
+volumes:
+  pgadmin_conn_data:
+    
+  
+    
+  postgres-vol:
+     
+  
+networks: 
+  db_network:
+    driver: bridge
