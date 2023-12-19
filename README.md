@@ -26,7 +26,7 @@ For database we are going to use Postgresql Docker container built using docker-
 
 - Deploy database using docker-compose 
 ```
-docker-compose up
+docker compose up
 ```
   
 - Lets activate virtual environment to prepare setup\
